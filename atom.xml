@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>WeiJiang</title>
   
-  <subtitle>这是我的第一个博客</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://baidu.com/"/>
@@ -36,116 +36,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>测试我第二篇文章</title>
-    <link href="http://baidu.com/2018/11/13/%E6%B5%8B%E8%AF%95%E6%88%91%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-    <id>http://baidu.com/2018/11/13/测试我第二篇文章/</id>
-    <published>2018-11-13T01:17:20.000Z</published>
-    <updated>2018-11-13T01:35:25.950Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="前端 - 搭建博客" scheme="http://baidu.com/categories/%E5%89%8D%E7%AB%AF-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-      <category term="java" scheme="http://baidu.com/tags/java/"/>
-    
-      <category term="前端" scheme="http://baidu.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="next" scheme="http://baidu.com/tags/next/"/>
-    
-      <category term="备忘" scheme="http://baidu.com/tags/%E5%A4%87%E5%BF%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>测试标签分类第三篇</title>
-    <link href="http://baidu.com/2018/11/12/%E6%B5%8B%E8%AF%95%E6%A0%87%E7%AD%BE%E5%88%86%E7%B1%BB%E7%AC%AC%E4%B8%89%E7%AF%87/"/>
-    <id>http://baidu.com/2018/11/12/测试标签分类第三篇/</id>
-    <published>2018-11-12T15:13:40.026Z</published>
-    <updated>2018-11-13T01:35:55.695Z</updated>
-    
-    <content type="html"><![CDATA[<p>这里面都要我写什么啊？？？</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;这里面都要我写什么啊？？？&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="java - 多线程 -控制器" scheme="http://baidu.com/categories/java-%E5%A4%9A%E7%BA%BF%E7%A8%8B-%E6%8E%A7%E5%88%B6%E5%99%A8/"/>
-    
-    
-      <category term="java" scheme="http://baidu.com/tags/java/"/>
-    
-      <category term="定时器" scheme="http://baidu.com/tags/%E5%AE%9A%E6%97%B6%E5%99%A8/"/>
-    
-      <category term="标签1" scheme="http://baidu.com/tags/%E6%A0%87%E7%AD%BE1/"/>
-    
-      <category term="标签2" scheme="http://baidu.com/tags/%E6%A0%87%E7%AD%BE2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://baidu.com/2018/11/12/hello-world/"/>
-    <id>http://baidu.com/2018/11/12/hello-world/</id>
-    <published>2018-11-12T12:25:54.993Z</published>
-    <updated>2018-11-12T12:25:54.994Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>测试标签分类第二篇</title>
-    <link href="http://baidu.com/2018/10/06/%E6%B5%8B%E8%AF%95%E6%A0%87%E7%AD%BE%E5%88%86%E7%B1%BB%E7%AC%AC%E4%BA%8C%E7%AF%87/"/>
-    <id>http://baidu.com/2018/10/06/测试标签分类第二篇/</id>
-    <published>2018-10-06T14:38:18.000Z</published>
-    <updated>2018-11-13T01:54:07.162Z</updated>
-    
-    <content type="html"><![CDATA[<p>测试标题</p><p>这些是我的描述嘛</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;测试标题&lt;/p&gt;
-&lt;p&gt;这些是我的描述嘛&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="java - 多线程 -控制器" scheme="http://baidu.com/categories/java-%E5%A4%9A%E7%BA%BF%E7%A8%8B-%E6%8E%A7%E5%88%B6%E5%99%A8/"/>
-    
-    
-      <category term="java" scheme="http://baidu.com/tags/java/"/>
-    
-      <category term="前端" scheme="http://baidu.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="next" scheme="http://baidu.com/tags/next/"/>
-    
-      <category term="备忘" scheme="http://baidu.com/tags/%E5%A4%87%E5%BF%98/"/>
     
   </entry>
   
