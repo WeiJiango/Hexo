@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.wliwu.com/"/>
-  <updated>2018-11-13T14:11:49.548Z</updated>
+  <updated>2018-11-14T12:51:41.611Z</updated>
   <id>http://www.wliwu.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo + github/coding搭建个人博客踩坑流程</title>
+    <link href="http://www.wliwu.com/2018/11/14/hexo-github-coding%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E6%95%99%E7%A8%8B/"/>
+    <id>http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/</id>
+    <published>2018-11-14T07:08:07.000Z</published>
+    <updated>2018-11-14T12:51:41.611Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>   用 <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a> 搭建个人博客网上技术帖众多但是难看到比较系统全面的技术贴，这篇帖子主要针对不熟悉hex且对此有兴趣的用户，我认为重要步骤我会详细截图。</p><h2 id="了解hexo"><a href="#了解hexo" class="headerlink" title="了解hexo"></a>了解hexo</h2><p>   hexo真不用多吹了（全静态，支持Markdown，操作方便，超快速度，支持众多插件）</p><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="下载安装node-js"><a href="#下载安装node-js" class="headerlink" title="下载安装node.js"></a>下载安装node.js</h3><p>1、下载安装 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a> 安装完成后控制台敲 node -v,npm -v提示如下表示安装成功<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/2018-11-14/node-cmd.jpg" alt=""><br><img src="/2018-11-14-hexo-github-coding搭建个人博客踩坑教程/node-cmd.png" alt="test"></p><p><img src="/2018-11-14/node-cmd.jpg" alt="R" width="600" height="300"><br>2、下载安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;   用 &lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;h
+      
+    
+    </summary>
+    
+      <category term="hexo-next" scheme="http://www.wliwu.com/categories/hexo-next/"/>
+    
+    
+      <category term="hexo" scheme="http://www.wliwu.com/tags/hexo/"/>
+    
+      <category term="next" scheme="http://www.wliwu.com/tags/next/"/>
+    
+      <category term="github" scheme="http://www.wliwu.com/tags/github/"/>
+    
+      <category term="coding" scheme="http://www.wliwu.com/tags/coding/"/>
+    
+  </entry>
   
   <entry>
     <title>测试我的第四篇</title>
