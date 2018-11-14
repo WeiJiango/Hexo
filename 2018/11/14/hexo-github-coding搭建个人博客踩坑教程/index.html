@@ -79,22 +79,36 @@
 
 
 
-<meta name="description" content="前言   用 hexo 搭建个人博客网上技术帖众多但是难看到比较系统全面的技术贴，这篇帖子主要针对不熟悉hex且对此有兴趣的用户，我认为重要步骤我会详细截图。 了解hexo   hexo真不用多吹了（全静态，支持Markdown，操作方便，超快速度，支持众多插件） 开始下载安装node.js1、下载安装 node.js 安装完成后控制台敲 node -v,npm -v提示如下表示安装成功 2、下载">
+<meta name="description" content="前言   用 hexo 搭建个人博客网上技术帖众多但是难看到比较系统全面的技术贴，这篇帖子主要针对不熟悉hex且对此有兴趣的用户，我认为重要步骤我会详细截图。 了解hexo   hexo真不用多吹了（全静态，支持Markdown，操作方便，超快速度，支持众多插件） 开始下载安装node.js/git1、下载安装 node.js 安装完成后控制台敲 node -v,npm -v提示如下表示安装成功">
 <meta name="keywords" content="hexo,next,github,coding">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo + github&#x2F;coding搭建个人博客踩坑流程">
 <meta property="og:url" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/index.html">
 <meta property="og:site_name" content="WeiJiang">
-<meta property="og:description" content="前言   用 hexo 搭建个人博客网上技术帖众多但是难看到比较系统全面的技术贴，这篇帖子主要针对不熟悉hex且对此有兴趣的用户，我认为重要步骤我会详细截图。 了解hexo   hexo真不用多吹了（全静态，支持Markdown，操作方便，超快速度，支持众多插件） 开始下载安装node.js1、下载安装 node.js 安装完成后控制台敲 node -v,npm -v提示如下表示安装成功 2、下载">
+<meta property="og:description" content="前言   用 hexo 搭建个人博客网上技术帖众多但是难看到比较系统全面的技术贴，这篇帖子主要针对不熟悉hex且对此有兴趣的用户，我认为重要步骤我会详细截图。 了解hexo   hexo真不用多吹了（全静态，支持Markdown，操作方便，超快速度，支持众多插件） 开始下载安装node.js/git1、下载安装 node.js 安装完成后控制台敲 node -v,npm -v提示如下表示安装成功">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/2018-11-14/node-cmd.jpg">
-<meta property="og:image" content="http://www.wliwu.com/2018-11-14-hexo-github-coding搭建个人博客踩坑教程/node-cmd.png">
-<meta property="og:image" content="http://www.wliwu.com/2018-11-14/node-cmd.jpg">
-<meta property="og:updated_time" content="2018-11-14T12:51:41.611Z">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/node-cmd.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/git-cmd.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/cre-git.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/git-pages.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/cre-cod.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/cod-page.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/ins-hex.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/hex-init.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/npm-ins.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/hex-g.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/hex-s.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/hex-4000.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/ssh-key.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/cod-ssh.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/git-p.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/cod-p.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/hexo-d.png">
+<meta property="og:updated_time" content="2018-11-14T16:02:31.898Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo + github&#x2F;coding搭建个人博客踩坑流程">
-<meta name="twitter:description" content="前言   用 hexo 搭建个人博客网上技术帖众多但是难看到比较系统全面的技术贴，这篇帖子主要针对不熟悉hex且对此有兴趣的用户，我认为重要步骤我会详细截图。 了解hexo   hexo真不用多吹了（全静态，支持Markdown，操作方便，超快速度，支持众多插件） 开始下载安装node.js1、下载安装 node.js 安装完成后控制台敲 node -v,npm -v提示如下表示安装成功 2、下载">
-<meta name="twitter:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/2018-11-14/node-cmd.jpg">
+<meta name="twitter:description" content="前言   用 hexo 搭建个人博客网上技术帖众多但是难看到比较系统全面的技术贴，这篇帖子主要针对不熟悉hex且对此有兴趣的用户，我认为重要步骤我会详细截图。 了解hexo   hexo真不用多吹了（全静态，支持Markdown，操作方便，超快速度，支持众多插件） 开始下载安装node.js/git1、下载安装 node.js 安装完成后控制台敲 node -v,npm -v提示如下表示安装成功">
+<meta name="twitter:image" content="http://www.wliwu.com/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/node-cmd.png">
 
 
 
@@ -367,7 +381,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  139
+                  973
                 </span>
               
 
@@ -383,7 +397,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -406,8 +420,28 @@
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>   用 <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a> 搭建个人博客网上技术帖众多但是难看到比较系统全面的技术贴，这篇帖子主要针对不熟悉hex且对此有兴趣的用户，我认为重要步骤我会详细截图。</p>
 <h2 id="了解hexo"><a href="#了解hexo" class="headerlink" title="了解hexo"></a>了解hexo</h2><p>   hexo真不用多吹了（全静态，支持Markdown，操作方便，超快速度，支持众多插件）</p>
-<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="下载安装node-js"><a href="#下载安装node-js" class="headerlink" title="下载安装node.js"></a>下载安装node.js</h3><p>1、下载安装 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a> 安装完成后控制台敲 node -v,npm -v提示如下表示安装成功<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/2018-11-14/node-cmd.jpg" alt=""><br><img src="/2018-11-14-hexo-github-coding搭建个人博客踩坑教程/node-cmd.png" alt="test"></p>
-<p><img src="/2018-11-14/node-cmd.jpg" alt="R" width="600" height="300"><br>2、下载安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a></p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="下载安装node-js-git"><a href="#下载安装node-js-git" class="headerlink" title="下载安装node.js/git"></a>下载安装node.js/git</h3><p>1、下载安装 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a> 安装完成后控制台敲 node -v,npm -v提示如下表示安装成功</p>
+<p><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/node-cmd.png" alt="test"></p>
+<p>2、下载安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a> 设置git系统环境变量方便cmd控制台里使用git命令(在环境变量-系统变量-path 添加git安装目录下bin文件夹路径)</p>
+<p>控制台运行git –version 提示如下表示安装成功<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/git-cmd.png"></p>
+<h3 id="申请github-coding账号"><a href="#申请github-coding账号" class="headerlink" title="申请github/coding账号"></a>申请github/coding账号</h3><h4 id="注册github"><a href="#注册github" class="headerlink" title="注册github"></a>注册github</h4><p>注册github账户并新建仓库 (过程不懂的自行百度文章很多这里不多赘述)<br>仓库名请务必以.github.io结尾，方便使用github pages<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/cre-git.png"></p>
+<p>进入仓库 在右侧选择 Settings 然后往下拖 看到 GitHub Pages 设置 Source 选择 master branch 然后 save 就可以看到属于你的github域名了<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/git-pages.png"></p>
+<h4 id="注册coding"><a href="#注册coding" class="headerlink" title="注册coding"></a>注册coding</h4><p>注册coding账户并新建仓库 (可直接用腾讯社交账号登陆)<br>创建项目 选择启用README.md文件初始化项目<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/cre-cod.png"><br>创建项目之后进入项目在左侧选择代码-Pages服务-一键开启coding pages 就可以看到属于你的coding域名了<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/cod-page.png"></p>
+<h3 id="安装配置hexo"><a href="#安装配置hexo" class="headerlink" title="安装配置hexo"></a>安装配置hexo</h3><h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h4><p>在合适的位置创建hexo安装文件夹。然后通过命令行在此文件夹内运行命令 npm install hexo -g 安装hexo<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/ins-hex.png"><br>如果安装失败请尝试以管理员身份运行CMD窗口<br>输入hexo -v 查看是否安装成功</p>
+<h4 id="初始化目录"><a href="#初始化目录" class="headerlink" title="初始化目录"></a>初始化目录</h4><p>输入 hexo init 初始化该文件夹<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/hex-init.png"></p>
+<h4 id="安装组件"><a href="#安装组件" class="headerlink" title="安装组件"></a>安装组件</h4><p>输入 npm install 安装组件<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/npm-ins.png"></p>
+<h4 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h4><p>输入 hexo g 生成静态文件<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/hex-g.png"></p>
+<h4 id="启动博客"><a href="#启动博客" class="headerlink" title="启动博客"></a>启动博客</h4><p>输入hexo s启动服务<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/hex-s.png"><br>打开浏览器访问 localhost:4000 造访你的博客主页<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/hex-4000.png"></p>
+<h3 id="部署到github-coding"><a href="#部署到github-coding" class="headerlink" title="部署到github/coding"></a>部署到github/coding</h3><h4 id="配置本地SSH公钥"><a href="#配置本地SSH公钥" class="headerlink" title="配置本地SSH公钥"></a>配置本地SSH公钥</h4><p>控制台输入 ssh-keygen -t rsa -C “你的邮箱” ，连续敲三下回车 成功之后会在红框路径内生成 id_rsa.pub 公钥文件<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/ssh-key.png"></p>
+<h4 id="coding-github配置SSH公钥"><a href="#coding-github配置SSH公钥" class="headerlink" title="coding/github配置SSH公钥"></a>coding/github配置SSH公钥</h4><p>复制 id_rsa.pub 文件内所有内容 (注意不要有空格否则之后可能报错) 打开coding项目项目主页在左侧选择-设置-部署公钥-新建部署公钥 再公钥内容当中粘贴复制的本地公钥 (注意要勾选授予推送权限否则推送代码时候会报错)<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/cod-ssh.png"></p>
+<p>github添加公钥同样是复制 id_rsa.pub 文件内容 在github主页上点击右上方头像-Settings-SSH and GPG keys-New SSH key粘贴进去新建就可以了</p>
+<h4 id="配置deploy"><a href="#配置deploy" class="headerlink" title="配置deploy"></a>配置deploy</h4><p>打开hexo博客主配置文件_cpmfog.yml，搜索找到 deploy属性配置如下<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>:</span><br><span class="line">  <span class="attribute">repository</span>:</span><br><span class="line">      <span class="attribute">github</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:compassblog/compassblog.github.io.git,master</span><br><span class="line">      <span class="attribute">coding</span>: git<span class="variable">@git</span>.coding.<span class="attribute">net</span>:compassblog/compassblog.git,master</span><br></pre></td></tr></table></figure></p>
+<p>参数当中github后面的地址在github项目主页当中点击Clone or download按钮复制当中的参数<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/git-p.png"></p>
+<p>coding后面的地址在coding项目主页当中点击左侧代码-代码浏览-SSH 复制当中的参数</p>
+<p><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/cod-p.png"></p>
+<h4 id="hexo-d-部署到github-coding"><a href="#hexo-d-部署到github-coding" class="headerlink" title="hexo d 部署到github/coding"></a>hexo d 部署到github/coding</h4><p>打开控制台移动到hexo博客根目录输入 hexo d 部署到github 和 coding上<br><img src="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/hexo-d.png"></p>
+<p>最后打开浏览器输入在github 和 coding 上申请的域名访问博客 (注意初次部署上去可能会不显示主题样式，多网上找解决办法有利于了解hexo)</p>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>如果是初次接触的话照着文档来肯定会遇到一些问题。注意控制台的报错信息复制到百度几乎都能找到答案。以后抽空再写hexo主题的东西吧，太晚了睡觉了。</p>
 
       
     </div>
@@ -440,22 +474,6 @@
       
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/11/13/测试我的第四篇/" rel="next" title="测试我的第四篇">
-                <i class="fa fa-chevron-left"></i> 测试我的第四篇
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
@@ -536,7 +554,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -615,7 +633,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#了解hexo"><span class="nav-number">2.</span> <span class="nav-text">了解hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始"><span class="nav-number">3.</span> <span class="nav-text">开始</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载安装node-js"><span class="nav-number">3.1.</span> <span class="nav-text">下载安装node.js</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#了解hexo"><span class="nav-number">2.</span> <span class="nav-text">了解hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始"><span class="nav-number">3.</span> <span class="nav-text">开始</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载安装node-js-git"><span class="nav-number">3.1.</span> <span class="nav-text">下载安装node.js/git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#申请github-coding账号"><span class="nav-number">3.2.</span> <span class="nav-text">申请github/coding账号</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#注册github"><span class="nav-number">3.2.1.</span> <span class="nav-text">注册github</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注册coding"><span class="nav-number">3.2.2.</span> <span class="nav-text">注册coding</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装配置hexo"><span class="nav-number">3.3.</span> <span class="nav-text">安装配置hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装hexo"><span class="nav-number">3.3.1.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化目录"><span class="nav-number">3.3.2.</span> <span class="nav-text">初始化目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装组件"><span class="nav-number">3.3.3.</span> <span class="nav-text">安装组件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#生成静态文件"><span class="nav-number">3.3.4.</span> <span class="nav-text">生成静态文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动博客"><span class="nav-number">3.3.5.</span> <span class="nav-text">启动博客</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到github-coding"><span class="nav-number">3.4.</span> <span class="nav-text">部署到github/coding</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置本地SSH公钥"><span class="nav-number">3.4.1.</span> <span class="nav-text">配置本地SSH公钥</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#coding-github配置SSH公钥"><span class="nav-number">3.4.2.</span> <span class="nav-text">coding/github配置SSH公钥</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置deploy"><span class="nav-number">3.4.3.</span> <span class="nav-text">配置deploy</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-d-部署到github-coding"><span class="nav-number">3.4.4.</span> <span class="nav-text">hexo d 部署到github/coding</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结尾"><span class="nav-number">4.</span> <span class="nav-text">结尾</span></a></li></ol></div>
             
 
           </div>
