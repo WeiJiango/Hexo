@@ -79,20 +79,20 @@
 
 
 
-<meta name="description" content="开始利用@RequestBody注解User对象接收前台json数据。Controller中代码如下1234@RequestMapping(value=&quot;/hhoo&quot;)public void getHello1(@RequestBody User user)&amp;#123;	System.out.println(user.getFname());&amp;#125; 实体类User代码如下1234567891">
+<meta name="description" content="利用@RequestBody注解User对象接收前台json数据。Controller中代码如下 1234@RequestMapping(value=&quot;/hhoo&quot;)public void getHello1(@RequestBody User user)&amp;#123;	System.out.println(user.getFname());&amp;#125; 实体类User代码如下12345678910">
 <meta name="keywords" content="java,SpringMVC,RequestBody">
 <meta property="og:type" content="article">
 <meta property="og:title" content="拒绝一切套路-浅谈@RequestBody注解使用">
 <meta property="og:url" content="http://www.wliwu.com/2018/12/04/拒绝一切套路-浅谈-RequestBody注解使用/index.html">
 <meta property="og:site_name" content="WeiJiang">
-<meta property="og:description" content="开始利用@RequestBody注解User对象接收前台json数据。Controller中代码如下1234@RequestMapping(value=&quot;/hhoo&quot;)public void getHello1(@RequestBody User user)&amp;#123;	System.out.println(user.getFname());&amp;#125; 实体类User代码如下1234567891">
+<meta property="og:description" content="利用@RequestBody注解User对象接收前台json数据。Controller中代码如下 1234@RequestMapping(value=&quot;/hhoo&quot;)public void getHello1(@RequestBody User user)&amp;#123;	System.out.println(user.getFname());&amp;#125; 实体类User代码如下12345678910">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.wliwu.com/2018/12/04/拒绝一切套路-浅谈-RequestBody注解使用/1.png">
 <meta property="og:image" content="http://www.wliwu.com/2018/12/04/拒绝一切套路-浅谈-RequestBody注解使用/2.png">
-<meta property="og:updated_time" content="2018-12-04T15:13:33.267Z">
+<meta property="og:updated_time" content="2018-12-04T15:19:35.598Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="拒绝一切套路-浅谈@RequestBody注解使用">
-<meta name="twitter:description" content="开始利用@RequestBody注解User对象接收前台json数据。Controller中代码如下1234@RequestMapping(value=&quot;/hhoo&quot;)public void getHello1(@RequestBody User user)&amp;#123;	System.out.println(user.getFname());&amp;#125; 实体类User代码如下1234567891">
+<meta name="twitter:description" content="利用@RequestBody注解User对象接收前台json数据。Controller中代码如下 1234@RequestMapping(value=&quot;/hhoo&quot;)public void getHello1(@RequestBody User user)&amp;#123;	System.out.println(user.getFname());&amp;#125; 实体类User代码如下12345678910">
 <meta name="twitter:image" content="http://www.wliwu.com/2018/12/04/拒绝一切套路-浅谈-RequestBody注解使用/1.png">
 
 
@@ -366,7 +366,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  319
+                  318
                 </span>
               
 
@@ -403,7 +403,8 @@
       
 
       
-        <h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>利用@RequestBody注解User对象接收前台json数据。<br>Controller中代码如下<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@RequestMapping</span>(value=<span class="string">"/hhoo"</span>)</span><br><span class="line">public void getHello1(<span class="variable">@RequestBody</span> User user)&#123;</span><br><span class="line">	<span class="selector-tag">System</span><span class="selector-class">.out</span><span class="selector-class">.println</span>(user.getFname());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <p>利用@RequestBody注解User对象接收前台json数据。<br>Controller中代码如下</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@RequestMapping</span>(value=<span class="string">"/hhoo"</span>)</span><br><span class="line">public void getHello1(<span class="variable">@RequestBody</span> User user)&#123;</span><br><span class="line">	<span class="selector-tag">System</span><span class="selector-class">.out</span><span class="selector-class">.println</span>(user.getFname());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>实体类User代码如下<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> &#123;</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> id;</span><br><span class="line">	<span class="keyword">private</span> String fname;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getFname</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> fname;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setFname</span><span class="params">(String fname)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.fname = fname;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getId</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> id;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span><span class="params">(<span class="keyword">int</span> id)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.id = id;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>jsp页面代码如下<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"sin"</span> <span class="attr">action</span>=<span class="string">"#"</span> <span class="attr">method</span>=<span class="string">"post"</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"fname"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"submit"</span> <span class="attr">onclick</span>=<span class="string">"ppp()"</span>  <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"Submit"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>注意from表单数据如果不经处理是无法被@RequestBody注解对象User所接收，所以这里需要引入<strong>jquery.serializejson.js</strong><br>来将from表单数据转换为json字符串。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"&lt;%=basePath%&gt;js/jquery.serializejson.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
@@ -624,7 +625,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#开始"><span class="nav-number">1.</span> <span class="nav-text">开始</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">2.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">1.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
