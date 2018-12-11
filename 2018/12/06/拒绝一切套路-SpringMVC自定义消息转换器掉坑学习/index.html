@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="iterator,java,">
+  <meta name="keywords" content="java,SpringMVC,Spring消息转换器,">
 
 
 
@@ -79,21 +79,22 @@
 
 
 
-<meta name="description" content="前言本人在从事java初期，在需要删除List当中元素的时候都是用for循环遍历集合来删除当中的元素，后来经人指点得知这种删除指定元素的方式似乎不太安全。 开始问题看如下删除元素示例 123456List&amp;lt;String&amp;gt; ls = new ArrayList&amp;lt;String&amp;gt;();ls.add(&quot;aa&quot;);ls.add(&quot;bb&quot;);ls.add(&quot;cc&quot;);ls.add(&quot;a">
-<meta name="keywords" content="iterator,java">
+<meta name="description" content="开始@RequestBody 和 @ResponseBody这两个注解作用就是在前台向后台传递数据时,把请求报文中的数据通过springmvc的处理成一个我们自己定义的对象,在这个过程中首先springmvc会去请求头中找到一个contentType的属性,然后去匹配能够处理这种类型的消息转换器,而在返回数据时,再把对象转换成响应报文.contentType是requestHeader中的一个属性">
+<meta name="keywords" content="java,SpringMVC,Spring消息转换器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Iterator解决List删除元素漏删情况">
-<meta property="og:url" content="http://www.wliwu.com/2018/11/26/暂时就叫这个名字/index.html">
+<meta property="og:title" content="拒绝一切套路-SpringMVC自定义消息转换器掉坑学习">
+<meta property="og:url" content="http://www.wliwu.com/2018/12/06/拒绝一切套路-SpringMVC自定义消息转换器掉坑学习/index.html">
 <meta property="og:site_name" content="WeiJiang">
-<meta property="og:description" content="前言本人在从事java初期，在需要删除List当中元素的时候都是用for循环遍历集合来删除当中的元素，后来经人指点得知这种删除指定元素的方式似乎不太安全。 开始问题看如下删除元素示例 123456List&amp;lt;String&amp;gt; ls = new ArrayList&amp;lt;String&amp;gt;();ls.add(&quot;aa&quot;);ls.add(&quot;bb&quot;);ls.add(&quot;cc&quot;);ls.add(&quot;a">
+<meta property="og:description" content="开始@RequestBody 和 @ResponseBody这两个注解作用就是在前台向后台传递数据时,把请求报文中的数据通过springmvc的处理成一个我们自己定义的对象,在这个过程中首先springmvc会去请求头中找到一个contentType的属性,然后去匹配能够处理这种类型的消息转换器,而在返回数据时,再把对象转换成响应报文.contentType是requestHeader中的一个属性">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://www.wliwu.com/2018/11/26/暂时就叫这个名字/1.png">
-<meta property="og:image" content="http://www.wliwu.com/2018/11/26/暂时就叫这个名字/2.png">
-<meta property="og:updated_time" content="2018-11-26T13:25:35.891Z">
+<meta property="og:image" content="http://www.wliwu.com/2018/12/06/拒绝一切套路-SpringMVC自定义消息转换器掉坑学习/1.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/12/06/拒绝一切套路-SpringMVC自定义消息转换器掉坑学习/2.png">
+<meta property="og:image" content="http://www.wliwu.com/2018/12/06/拒绝一切套路-SpringMVC自定义消息转换器掉坑学习/3.png">
+<meta property="og:updated_time" content="2018-12-11T02:27:54.264Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Iterator解决List删除元素漏删情况">
-<meta name="twitter:description" content="前言本人在从事java初期，在需要删除List当中元素的时候都是用for循环遍历集合来删除当中的元素，后来经人指点得知这种删除指定元素的方式似乎不太安全。 开始问题看如下删除元素示例 123456List&amp;lt;String&amp;gt; ls = new ArrayList&amp;lt;String&amp;gt;();ls.add(&quot;aa&quot;);ls.add(&quot;bb&quot;);ls.add(&quot;cc&quot;);ls.add(&quot;a">
-<meta name="twitter:image" content="http://www.wliwu.com/2018/11/26/暂时就叫这个名字/1.png">
+<meta name="twitter:title" content="拒绝一切套路-SpringMVC自定义消息转换器掉坑学习">
+<meta name="twitter:description" content="开始@RequestBody 和 @ResponseBody这两个注解作用就是在前台向后台传递数据时,把请求报文中的数据通过springmvc的处理成一个我们自己定义的对象,在这个过程中首先springmvc会去请求头中找到一个contentType的属性,然后去匹配能够处理这种类型的消息转换器,而在返回数据时,再把对象转换成响应报文.contentType是requestHeader中的一个属性">
+<meta name="twitter:image" content="http://www.wliwu.com/2018/12/06/拒绝一切套路-SpringMVC自定义消息转换器掉坑学习/1.png">
 
 
 
@@ -123,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="http://www.wliwu.com/2018/11/26/暂时就叫这个名字/">
+  <link rel="canonical" href="http://www.wliwu.com/2018/12/06/拒绝一切套路-SpringMVC自定义消息转换器掉坑学习/">
 
 
 
@@ -139,7 +140,7 @@
   </script>
 
 
-  <title>Iterator解决List删除元素漏删情况 | WeiJiang</title>
+  <title>拒绝一切套路-SpringMVC自定义消息转换器掉坑学习 | WeiJiang</title>
   
 
 
@@ -276,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.wliwu.com/2018/11/26/暂时就叫这个名字/">
+    <link itemprop="mainEntityOfPage" href="http://www.wliwu.com/2018/12/06/拒绝一切套路-SpringMVC自定义消息转换器掉坑学习/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="WeiJiang1996">
@@ -293,7 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Iterator解决List删除元素漏删情况</h1>
+          <h1 class="post-title" itemprop="name headline">拒绝一切套路-SpringMVC自定义消息转换器掉坑学习</h1>
         
 
         <div class="post-meta">
@@ -305,8 +306,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-26T16:44:07+08:00">
-                2018-11-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-06T23:05:17+08:00">
+                2018-12-06
               </time>
             
 
@@ -328,8 +329,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
+                  <a href="/categories/java-SpringMVC/" itemprop="url" rel="index">
+                    <span itemprop="name">java-SpringMVC</span>
                   </a>
                 </span>
 
@@ -366,7 +367,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  425
+                  808
                 </span>
               
 
@@ -382,7 +383,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -403,18 +404,14 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本人在从事java初期，在需要删除List当中元素的时候都是用for循环遍历集合来删除当中的元素，后来经人指点得知这种删除指定元素的方式似乎不太安全。</p>
-<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>看如下删除元素示例</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; ls = new ArrayList&lt;String&gt;();</span><br><span class="line">ls.<span class="builtin-name">add</span>(<span class="string">"aa"</span>);</span><br><span class="line">ls.<span class="builtin-name">add</span>(<span class="string">"bb"</span>);</span><br><span class="line">ls.<span class="builtin-name">add</span>(<span class="string">"cc"</span>);</span><br><span class="line">ls.<span class="builtin-name">add</span>(<span class="string">"aa"</span>);</span><br><span class="line">ls.<span class="builtin-name">add</span>(<span class="string">"aa"</span>);</span><br></pre></td></tr></table></figure>
-<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">System.<span class="keyword">out</span>.println(<span class="string">"这是删除之前的ls"</span>+<span class="keyword">ls</span>);<span class="comment">//删除之前的ls</span></span><br><span class="line"><span class="keyword">for</span>(int i=0;i&lt;<span class="keyword">ls</span>.size();i++)&#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="string">"aa"</span>==<span class="keyword">ls</span>.<span class="built_in">get</span>(i))&#123;</span><br><span class="line">		<span class="keyword">ls</span>.remove(i);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">System.<span class="keyword">out</span>.println(<span class="string">"这是删除之前的ls"</span>+<span class="keyword">ls</span>);<span class="comment">//删除之后的ls</span></span><br></pre></td></tr></table></figure>
-<p>控制台输出如下<br><img src="/2018/11/26/暂时就叫这个名字/1.png"></p>
-<p>这似乎不是我们想要的结果。导致上面的原因是在ls删除某个元素之后，ls的大小随之发生变化，而你的索引也在变化，删除元素之后的元素都往前移动了一位，这就导致了漏删掉一些元素。</p>
-<h3 id="用Iterator解决问题"><a href="#用Iterator解决问题" class="headerlink" title="用Iterator解决问题"></a>用Iterator解决问题</h3><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">System.out.println</span>(<span class="string">"这是删除之前的ls"</span>+ls)<span class="comment">;</span></span><br><span class="line"><span class="keyword">Iterator&lt;String&gt; </span><span class="keyword">iterator </span>= ls.<span class="keyword">iterator();</span></span><br><span class="line"><span class="keyword">while(iterator.hasNext())&#123;</span></span><br><span class="line"><span class="keyword">	</span><span class="keyword">String </span><span class="keyword">str </span>= <span class="keyword">iterator.next();</span></span><br><span class="line"><span class="keyword">	</span><span class="meta">if</span>(<span class="string">"aa"</span>.equals(<span class="keyword">str))&#123;</span></span><br><span class="line"><span class="keyword">	</span>	<span class="keyword">iterator.remove();</span></span><br><span class="line"><span class="keyword">	</span>&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="symbol">System.out.println</span>(<span class="string">"这是删除之后的ls"</span>+ls)<span class="comment">;</span></span><br></pre></td></tr></table></figure>
-<p>控制台输出如下<br><img src="/2018/11/26/暂时就叫这个名字/2.png"></p>
-<p>这正是我们想要的结果</p>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Iterator&lt;String&gt; </span><span class="keyword">iterator </span>= ls.<span class="keyword">iterator();</span></span><br></pre></td></tr></table></figure>
-<p>上面代码将ls的引用传递给iterator对象，由iterator对象来做删除操作，让这个操作变得安全。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>其实第一眼看到iterator来删除对象时候是比较疑惑的，因为在iterator遍历完之后并没有将值赋给List，其实Iterator<string> iterator = ls.iterator() 这句是将List的引用传递给Iterator对象所以并不存在赋值过去的说法。</string></p>
+        <h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p><strong>@RequestBody</strong> 和 <strong>@ResponseBody</strong>这两个注解作用就是在前台向后台传递数据时,把请求报文中的数据通过springmvc的处理成一个我们自己定义的对象,在这个过程中首先springmvc会去请求头中找到一个contentType的属性,然后去匹配能够处理这种类型的消息转换器,而在返回数据时,再把对象转换成响应报文.<br><strong>contentType</strong>是requestHeader中的一个属性，这个头部主要用于说明body中的字符串是什么格式的，比如：text，json，xml,html等。springmvc解析请求时,首先通过此头部,才能确定使用什么格式来解析请求体中的字符串，对于响应报文，浏览器也是要通过这个属性,来确定在如何处理响应报文的返回数据。</p>
+<p>第一步建立自己的消息转换器类继承AbstractHttpMessageConverter<t>。并定义我们的媒体类型x-user<br><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">public <span class="class"><span class="keyword">class</span> <span class="title">MyMessageConverter</span> <span class="keyword">extends</span> <span class="title">AbstractHttpMessageConverter&lt;User&gt;</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	public <span class="type">MyMessageConverter</span>()&#123;</span><br><span class="line">        <span class="keyword">super</span>(<span class="keyword">new</span> <span class="type">MediaType</span>(<span class="string">"application"</span>,<span class="string">"x-user"</span>, <span class="type">Charset</span>.forName(<span class="string">"utf-8"</span>)));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="keyword">protected</span> boolean supports(<span class="type">Class</span>&lt;?&gt; clazz) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="type">User</span>.<span class="keyword">class</span>.isAssignableFrom(clazz);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="keyword">protected</span> <span class="type">User</span> readInternal(<span class="type">Class</span>&lt;? <span class="keyword">extends</span> <span class="type">User</span>&gt; clazz, <span class="type">HttpInputMessage</span> inputMessage)</span><br><span class="line">			<span class="keyword">throws</span> <span class="type">IOException</span>, <span class="type">HttpMessageNotReadableException</span> &#123;</span><br><span class="line">		 <span class="type">String</span> temp= <span class="type">StreamUtils</span>.copyToString(inputMessage.getBody(),<span class="type">Charset</span>.forName(<span class="string">"UTF-8"</span>));</span><br><span class="line">		 <span class="type">Map</span>&lt;<span class="type">String</span>,<span class="type">Object</span>&gt; map =(<span class="type">Map</span>&lt;<span class="type">String</span>,<span class="type">Object</span>&gt;)<span class="type">JSON</span>.parseObject(temp);</span><br><span class="line">		 <span class="type">User</span> u = <span class="keyword">new</span> <span class="type">User</span>();</span><br><span class="line">		 u.setFname((<span class="type">String</span>) map.get(<span class="string">"fname"</span>));</span><br><span class="line">		 u.setLname((<span class="type">String</span>) map.get(<span class="string">"lname"</span>));</span><br><span class="line">		 <span class="keyword">return</span> u;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="keyword">protected</span> void writeInternal(<span class="type">User</span> t, <span class="type">HttpOutputMessage</span> outputMessage)</span><br><span class="line">			<span class="keyword">throws</span> <span class="type">IOException</span>, <span class="type">HttpMessageNotWritableException</span> &#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></t></p>
+<p>第二步在springMVC配置文件中配置我们的消息转换器<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mvc:annotation-driven</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">mvc:message-converters</span>  <span class="attr">register-defaults</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">     </span><br><span class="line">         <span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"com.xiaojiling.tool.MyMessageConverter"</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"supportedMediaTypes"</span>&gt;</span></span><br><span class="line">                 <span class="tag">&lt;<span class="name">list</span>&gt;</span></span><br><span class="line">                 	<span class="tag">&lt;<span class="name">value</span>&gt;</span>application/json<span class="tag">&lt;/<span class="name">value</span>&gt;</span>		</span><br><span class="line">                     <span class="tag">&lt;<span class="name">value</span>&gt;</span>application/x-user;charset=utf-8<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">                 <span class="tag">&lt;/<span class="name">list</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">		</span><br><span class="line">     <span class="tag">&lt;/<span class="name">mvc:message-converters</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">mvc:annotation-driven</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>第三步在Controller中手动指定那个接口可以接收我们定义的媒体类型。<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(value=<span class="meta-string">"/pushData"</span>, method = RequestMethod.POST, consumes=<span class="meta-string">"application/x-user"</span>)</span></span><br><span class="line">   <span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> String pushData(<span class="meta">@RequestBody</span> User user)&#123;</span><br><span class="line">	System.<span class="keyword">out</span>.println(user.getFname());</span><br><span class="line">       System.<span class="keyword">out</span>.println(user.getLname());</span><br><span class="line">	<span class="keyword">return</span> <span class="string">"sussess"</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>最后前端在调用上门接口的时候ContentType需要改成我们定义的类型x-user。里我使用jmeter模拟请求数据。<br> <img src="/2018/12/06/拒绝一切套路-SpringMVC自定义消息转换器掉坑学习/1.png"><br>  <img src="/2018/12/06/拒绝一切套路-SpringMVC自定义消息转换器掉坑学习/2.png"><br>   <img src="/2018/12/06/拒绝一切套路-SpringMVC自定义消息转换器掉坑学习/3.png"></p>
+<p>经过掉坑总结 Spring4.1.6版本死活都得不到想要的结果，自定义的消息转换器没办法生效。后来换成4.3.0版本一切正常。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>SpringMVC提供了9种默认的消息转换器，这些转换器能满足大部分需求。</p>
+<p><strong>ByteArrayHttpMessageConverter</strong>负责读取二进制格式的数据和写出二进制格式的数据；<br><strong>StringHttpMessageConverter</strong>负责读取字符串格式的数据和写出二进制格式的数据；<br><strong>ResourceHttpMessageConverter</strong>负责读取资源文件和写出资源文件数据；<br><strong>FormHttpMessageConverter</strong>负责读取form提交的数据（能读取的数据格式为 application/x-www-form-urlencoded，不能读取multipart/form-data格式数据）；负责写入application/x-www-from-urlencoded和multipart/form-data格式的数据；<br><strong>MappingJacksonHttpMessageConverter</strong>负责读取和写入json格式的数据；<br><strong>SouceHttpMessageConverter</strong>负责读取和写入 xml 中javax.xml.transform.Source定义的数据；<br><strong>Jaxb2RootElementHttpMessageConverter</strong>负责读取和写入xml 标签格式的数据；<br><strong>AtomFeedHttpMessageConverter</strong>负责读取和写入Atom格式的数据；<br><strong>RssChannelHttpMessageConverter</strong>负责读取和写入RSS格式的数据；</p>
 
       
     </div>
@@ -432,9 +429,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/iterator/" rel="tag"><i class="fa fa-tag"></i> iterator</a>
-          
             <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
+          
+            <a href="/tags/SpringMVC/" rel="tag"><i class="fa fa-tag"></i> SpringMVC</a>
+          
+            <a href="/tags/Spring消息转换器/" rel="tag"><i class="fa fa-tag"></i> Spring消息转换器</a>
           
         </div>
       
@@ -447,8 +446,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/14/hexo-github-coding搭建个人博客踩坑教程/" rel="next" title="hexo + github/coding搭建个人博客踩坑流程">
-                <i class="fa fa-chevron-left"></i> hexo + github/coding搭建个人博客踩坑流程
+              <a href="/2018/12/04/拒绝一切套路-浅谈-RequestBody注解使用/" rel="next" title="拒绝一切套路-浅谈@RequestBody注解使用">
+                <i class="fa fa-chevron-left"></i> 拒绝一切套路-浅谈@RequestBody注解使用
               </a>
             
           </div>
@@ -456,10 +455,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/30/拒绝一切套路SpringMVC入门教程总结/" rel="prev" title="拒绝一切套路SpringMVC入门教程总结">
-                拒绝一切套路SpringMVC入门教程总结 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -630,7 +625,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始"><span class="nav-number">2.</span> <span class="nav-text">开始</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题"><span class="nav-number">2.1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用Iterator解决问题"><span class="nav-number">2.2.</span> <span class="nav-text">用Iterator解决问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#开始"><span class="nav-number">1.</span> <span class="nav-text">开始</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">2.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
